@@ -53,3 +53,46 @@ h1 {
   /* your css rules */
 }
 ```
+
+### What is CSS?
+
+CSS stans for cascading style sheet. It says nothing really but it means that styling always cascades down through the css stylesheet. CSS goes from top to bottom so the structure in your css stylesheets matters.
+
+### Three different ways to style your content.
+
+#### Element styling
+
+It is styling that targets a specific html element. Could be `<h1>` tag for instance. But remember, if you style this way _ALL_ the `<h1>` tags will get the same styling It's not very specific in other words.
+
+```css
+h1 {
+  color: blue;
+}
+```
+
+#### Class styling
+
+Class styling is used when we ant to be much more specific on which elements
+to style. There might be several of the same kind, but we are only interested in styling one of those. Then we use a css class.
+
+```css
+.some-class {
+  background-color: blue;
+  /* This styling will only apply to an element that has the specific class "some-class". */
+}
+```
+
+A good thing to know about classes is that you can reuse them
+as many times as you want.
+
+#### Id styling
+
+Works the same way as a class, you just use `#` instead. The convention here is that the id is unique,
+it means you shouldn't reuse
+
+```css
+#some-id {
+  background-color: yellow;
+  /* This styling will only apply to an element that has the id of "some-id";. */
+}
+```
